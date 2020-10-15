@@ -4,7 +4,7 @@
 
     <groupId>ch.patchcode</groupId>
     <artifactId>jback-sec-model</artifactId>
-    <version>0.9.1-SNAPSHOT</version>
+    <version>0.9.1</version>
     <packaging>jar</packaging>
 
     <name>JBack security model</name>
@@ -38,7 +38,7 @@
     <scm>
         <url>https://github.com/blaulaub/jback-sec-model</url>
         <connection>scm:git:ssh://git@github.com/blaulaub/jback-sec-model.git</connection>
-        <tag>HEAD</tag>
+        <tag>jback-sec-model-0.9.1</tag>
     </scm>
 
     <distributionManagement>
