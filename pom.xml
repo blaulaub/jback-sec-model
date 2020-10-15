@@ -16,6 +16,12 @@
         <maven.compiler.release>${java.version}</maven.compiler.release>
     </properties>
 
+    <scm>
+        <url>https://github.com/blaulaub/jback-sec-model</url>
+        <connection>scm:git:git://git@github.com/blaulaub/jback-sec-model.git</connection>
+        <tag>HEAD</tag>
+    </scm>
+
     <distributionManagement>
         <repository>
             <id>sonatype-staging</id>
@@ -85,6 +91,13 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+
+            <!-- nail down how release should work -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>3.0.0-M1</version>
             </plugin>
 
         </plugins>
