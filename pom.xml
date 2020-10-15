@@ -7,6 +7,27 @@
     <version>0.9.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+    <name>JBack security model</name>
+    <description>This packages conceptualizes the basic entities of the security model of the JBack system.</description>
+    <url>https://github.com/blaulaub/jback-sec-model</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>cfuchs</id>
+            <name>Christian Fuchs</name>
+            <email>cfuchs@patchcode.ch</email>
+            <timezone>Europe/Zurich</timezone>
+        </developer>
+    </developers>
+
     <properties>
         <java.version>11</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
