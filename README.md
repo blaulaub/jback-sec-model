@@ -73,6 +73,8 @@ When this is in place and valid, `mvn deploy` will update the current snapshot a
 
 ## Release a new version
 
+### Local Maven Procedure
+
 We use the
 [Maven Release Plugin](https://maven.apache.org/maven-release/maven-release-plugin/)
 for packaging and
@@ -85,6 +87,13 @@ The relese plugin requries mostly three steps
 - `mvn release:clean`
 - `mvn release:prepare`
 - `mvn release:perform`
+
+### OSSRH Staging Procedure
+
+After performing the release, which puts the new artefact into an automatically
+created staging repository, navigate to
+`https://oss.sonatype.org/#stagingRepositories`. There you can complete (or fail)
+the final release.
 
 
 ## A word on relations and generic typing
