@@ -1,5 +1,6 @@
 # Security Model
 
+
 ## The entities
 
 This packages conceptualizes the basic entities of the security model of
@@ -22,6 +23,23 @@ persons are for placing domain concerns.
 To better deal with that split in practice, another entity is defined:
 
 * **User** is the combination of both a principal and a person
+
+
+## Release a new version
+
+We use the
+[Maven Release Plugin](https://maven.apache.org/maven-release/maven-release-plugin/)
+for packaging and
+[Sonatype OSSRH](https://central.sonatype.org/pages/ossrh-guide.html)
+for hosting.
+
+The relese plugin requries mostly three steps
+(see its documentation for further details):
+
+- `mvn release:clean`
+- `mvn release:prepare`
+- `mvn release:perform`
+
 
 ## A word on relations and generic typing
 
